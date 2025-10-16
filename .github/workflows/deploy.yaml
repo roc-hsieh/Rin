@@ -51,6 +51,5 @@ jobs:
           RSS_DESCRIPTION: ${{ vars.RSS_DESCRIPTION }}
         run: |
           cd Rin/
-		  bun add @sinclair/typebox
           bun install --frozen-lockfile
           bun scripts/migrator.ts
